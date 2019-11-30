@@ -8,14 +8,14 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>first blog.md | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="第一章内容第二章">
+  <meta name="description" content="第一章:环境部署1.安装git，nodejssudo sunode -vnpm -vnpm install -g cnpm –registry=https:&#x2F;&#x2F;registry.npm.taobao.orgcnpm -vcnpm install -g hexo-clihexo -vpwdmkdir blogcd blogpwdsudo hexo inithexo s  第二章:github 建立新">
 <meta property="og:type" content="article">
 <meta property="og:title" content="first blog.md">
 <meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;17&#x2F;first-blog-md&#x2F;index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="第一章内容第二章">
+<meta property="og:description" content="第一章:环境部署1.安装git，nodejssudo sunode -vnpm -vnpm install -g cnpm –registry=https:&#x2F;&#x2F;registry.npm.taobao.orgcnpm -vcnpm install -g hexo-clihexo -vpwdmkdir blogcd blogpwdsudo hexo inithexo s  第二章:github 建立新">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-11-17T09:17:49.086Z">
+<meta property="og:updated_time" content="2019-11-30T12:03:40.553Z">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
@@ -172,7 +172,20 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h2><h2 id="内容"><a href="#内容" class="headerlink" title="内容"></a>内容</h2><h2 id="第二章"><a href="#第二章" class="headerlink" title="第二章"></a>第二章</h2>
+        <h2 id="第一章-环境部署"><a href="#第一章-环境部署" class="headerlink" title="第一章:环境部署"></a>第一章:环境部署</h2><p>1.安装git，nodejs<br>sudo su<br>node -v<br>npm -v<br>npm install -g cnpm –registry=<a href="https://registry.npm.taobao.org" target="_blank" rel="noopener">https://registry.npm.taobao.org</a><br>cnpm -v<br>cnpm install -g hexo-cli<br>hexo -v<br>pwd<br>mkdir blog<br>cd blog<br>pwd<br>sudo hexo init<br>hexo s</p>
+<hr>
+<h2 id="第二章-github"><a href="#第二章-github" class="headerlink" title="第二章:github"></a>第二章:github</h2><ol>
+<li><p>建立新博客文章<br>hexo n “我的第一篇博客文章“<br>cd source/_posts/<br>vim 我的第一篇博客文章.md<br>cd ../..<br>hexo clean<br>hexo g        #生成博客</p>
+</li>
+<li><p>github 新建blog仓库   guanfengs98.github.io<br>cnpm install –save hexo-deployer-git      #安装部署插件<br>vim _config.yml                    #  deploy:</p>
+<pre><code>type: git
+repo: https://github.com/guanfengs98/guanfengs98.github.io.git
+branch:master</code></pre><p>hexo d                    #部署到github</p>
+</li>
+<li><p>改blog的主题  github.com/litten/hexo-theme-yilia<br>pwd<br>mkdir themes/yilia<br>git clone <a href="https://github.com/litten/hexo-theme-yilia.git" target="_blank" rel="noopener">https://github.com/litten/hexo-theme-yilia.git</a> themes/yilia<br>vim _config.yml                    # theme:yilia  更换<br>hexo clean<br>hexo g<br>hexo d</p>
+</li>
+</ol>
+
       
 
       
